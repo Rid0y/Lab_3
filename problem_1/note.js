@@ -1,4 +1,3 @@
-
 function addNote(){
    
     // create elements
@@ -21,6 +20,10 @@ function addNote(){
     deletebutton.innerHTML = "delete"
     //deletebutton.onclick = () => {deleteNote(newNote)}
 
+    rxjs.fromEvent(deletebutton,'click')  
+    .subscribe(() => deleteNote(newNote)
+   )
+
     //making color
     let colorbutton = document.getElementById("color");
     noteText.style.backgroundColor = colorbutton.value
@@ -36,8 +39,3 @@ function deleteNote(note){
 
 
 
-/*
-<ul id=notes>
-    <li><textarea>
-</ul>
- */
