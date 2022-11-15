@@ -1,3 +1,8 @@
+
+ rxjs.fromEvent(document.getElementById('add-btn'),'click')  
+ .subscribe(() => addNote()
+)
+
 function addNote(){
    
     // create elements
@@ -23,7 +28,7 @@ function addNote(){
     rxjs.fromEvent(deletebutton,'click')  
     .subscribe(() => deleteNote(newNote)
    )
-
+   
     //making color
     let colorbutton = document.getElementById("color");
     noteText.style.backgroundColor = colorbutton.value
@@ -33,9 +38,7 @@ function addNote(){
 }
 
 
+
 function deleteNote(note){
     note.remove();
 }
-
-
-
