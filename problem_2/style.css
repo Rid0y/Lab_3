@@ -1,0 +1,74 @@
+/*Timer input section*/
+#get_time{
+    padding: 0;
+    margin: 0;
+    height: 5em;
+    width:100%
+}
+#get_time div{
+    display: inline-block;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+}
+.timeinput{
+    width: 14%;
+}
+.colon{
+    width: 10%;
+}
+.timeinputarea, .colonDisplay{
+    font-size: 30pt;
+}
+.timeinputarea{
+    width: 95%;
+}
+.colonDisplay{
+
+    width: 30%;
+    color: black;
+    height: 100%;
+}
+#begin_timerSection{
+    height: 5em;
+    width: 100%;
+}
+#begin_timer{
+    height: inherit;
+    width: 50%;
+    margin-left: 15%;
+}
+#begin_timer div{
+    display: inline-block;
+}
+#ButtonSection {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+#ButtonTextSection{
+    width: 50%;
+    height: inherit;
+    padding-top: 1em;
+    padding-right: 8.5em;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: static;
+}
+#buttonImg{
+    height: inherit;
+    width: inherit;
+    padding: 0;
+}
+#ButtonText{
+    width: inherit;
+    height: inherit;
+    font-size: 3em;
+    float: center;
+} 
+#show_count{
+    margin-left:30%;
+    font-size: 5em;
+}
