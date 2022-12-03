@@ -9,7 +9,34 @@
 </head>
 <body>
     
-    <script type="text/javascript" src="page.js"></script>
-    <button type="button" id="randButton" onclick="showAlert()">Click Me!</button>
+    <h1>Timer Assingment</h1>
+            <div id="get_time">
+                <div class = "timeinput">
+                    <input type = "number" class="timeinputarea" id = "hours" placeholder="Hour">
+                </div>
+                <div class="colon">
+                    <input class="colonDisplay" value = " : " disabled>
+                </div>
+                <div class = "timeinput">
+                    <input type = "number" class="timeinputarea" id="minutes" placeholder="Minutes">
+                </div>
+                <div class="colon">
+                    <input class="colonDisplay" value = " : " disabled>
+                </div>
+                <div class = "timeinput">
+                    <input type = "number" class="timeinputarea" id="second" placeholder="Second">
+                </div>
+            </div>
+             <div id = "begin_timerSection">
+                <button id="begin_timer" onclick = "timer_Info()">
+                    <div id = "ButtonTextSection">
+                        <span id = "ButtonText">Start Countdown</span>
+                    </div>
+                </button>
+            </div>
+            <div id="show_count"></div>
+        <script src="https://npmcdn.com/@reactivex/rxjs@5.0.0-beta.3/dist/global/Rx.umd.js"></script>
+        <script src="page.js"></script>
+    </body>
 </body>
 </html>
